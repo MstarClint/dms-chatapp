@@ -9,7 +9,7 @@ import Balancer from "react-wrap-balancer";
 import { Section, Container } from "../craft";
 
 // Asset imports
-import Logo from "@/public/next.svg";
+import Logo from "@/public/DMs_logo.png";
 
 export default function Footer() {
   return (
