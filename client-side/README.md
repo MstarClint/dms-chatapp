@@ -1,45 +1,28 @@
-# Connect React to Chat Engine!
+# JS Chat Website 💬 👾
 
-This simple repo shows how to easily add chat functionality into a React project with [Chat Engine](https://chatengine.io).
+![JS website chat GIF](https://blog.chatengine.io/assets/per-post/nodejs-react-demo.gif)
 
-To understand the code, please watch [this video]()!
+This is a chat UI built entirely with Javascript (React specifically) 😃
 
-## Setup Steps
+All you need to run the webstie is NPM installed on your computer!
 
-Setup this chat client in 3 steps below.
+To run the website, clone the director, `cd` into it with your terminal:
 
-These steps assume you have already setup one of the server projects in `../server-*` (for example, `server-express`).
+## 1. Add `.env` file
 
-### 1 - Setup a Chat Engine server
-
-Go to [Chat Engine](https://chatengine.io) to setup your own chat server.
-
-- Click "New Project" and follow the steps
-- Your `Project ID` and `Private Key` will be required for step 2
-
-### 2 - Connect `.env` to Chat Engine
-
-We will connect to your Chat Engine server with environment varibles.
-
-This allows you to connect to different chat-servers in local vs staging vs production.
-
-Replace the UUID below with your own. In `.env` write:
+Within your `.env` file, add the following with your [ChatEngine.io](ChatEngine.io) Project ID (instead of `XXXX`)
 
 ```
-REACT_APP_CHAT_ENGINE_PROJECT_ID=5d498a31-cd23-42b7-b367-4fcc9463bd2f
+VITE_CHAT_ENGINE_PROJECT_ID=XXXX
 ```
 
-### 3 - Install & Start
-
-Run the following two lines of code in `client-react/`.
+## 2. Run the code!
 
 ```
-npm install
-npm run start
+npm install # to install all packages
+npm run dev # to start the website
 ```
 
-Done! Your Express server is on `localhost:3000` and connected to Chat Engine!
+Then, your webstie will be running at http://localhost:5173/
 
-All new "Sign Up" users are on Chat Engine, and their credentiuals are found upon "Login".
-
-To understand the code, please watch [this video]()!
+Done 🎉
